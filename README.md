@@ -4,8 +4,7 @@
 - 💞️ Estoy buscando colaborar en la comunidad de GitHub, por lo que este repo, es el primero.
 - 📫 Cómo llegar a mí podes encontrarme en Twitter buscandome como @FacorroMartin. Tambien podes buscarme en LinkedIn como Martin Facorro.
 
-# PrepAZ-900_Esp
-## Preparacion Azure AZ-900 Español
+# Preparacion Azure AZ-900 Español
 
 En este camino del aprendizaje, mientras lo recorro, quiero compartir aquellos recursos que me sirven al momento de preparme.
 
@@ -32,7 +31,7 @@ Este examen incluye seis áreas de dominios de conocimiento:
 
 # <img src="img\intro-to-azure-fundamentals.svg" alt="" style="height: 40px; width:50px;"/> Módulo 1 Conceptos de la nube
 
-**Computo en la nube**: prestación de servicios a través de internet, permite innovación mas rapida, recursos flexibles y costos regulables.
+**Computo en la nube**: prestación de servicios de computo a través de internet, permite el acceso bajo demanda a un grupo de recursos. Permite innovación mas rapida, recursos flexibles y costos regulables.
 
 ## Modelos en la nube
 
@@ -104,9 +103,73 @@ Se utiliza para poder desarrollar, implementar software, si preocupaciones sobre
 Los usuarios usan aplicaciones basadas en la nube y se conectan a ellas a través de Internet. Algunos ejemplos: Microsoft 365, correo electrónico, calendario. Aplicaciones 100% en la nube.
 
 ### Modelo de Responsabilidad compartida.
+La responsabilidad de acceso y de datos siempre es responsabilidad del cliente.
+
+<img src="img\shared-responsibility.svg" alt="" style="height: 340px; width:550px;"/>
 
 ### ServerLess o computo sin servidor.
 
-**Azure Functions**: funciones que se ejecutan como servicios. Ejecución en tiempo real, donde se crea el recurso, se utiliza y se desecha. La VENTAJA es el costo, ya que se paga por lo que se consume.
+**Azure Functions:** funciones que se ejecutan como servicios. Ejecución en tiempo real, donde se crea el recurso, se utiliza y se desecha. La VENTAJA es el costo, ya que se paga por lo que se consume.
 
-**Azure Logic Apps**:servicio basado en la nube.
+**Azure Logic Apps:** servicio basado en la nube.
+
+
+# Módulo 2 Conceptos de la nube
+
+## Componentes de Arquitectura
+
+### Regiones.
+
+### Zonas de disponibilidad.
+
+### Recursos principales.
+
+### Azure Resources Manager
+
+### Suscripciones
+
+### Grupos de Administracion.
+
+### Computo (Azure Compute Services).
+
+#### Maquinas virtuales.
+
+#### Servicio de Aplicaciones (Application services).
+
+#### Contenedores (Containers Instances).
+
+#### Azure Kubernetes Services
+
+#### Escritorio Virtual de Windows
+
+### Redes.
+
+#### Azure Virtual Network (VNet)
+
+#### Virtual Private Network Gateway (VPN)
+
+#### Azure Express Route
+
+### Almacenamiento (Azure Storage Services).
+
+#### Contenedores de almacenamiento (Blob Storage)
+
+#### Disk Storage
+
+#### Azure Files
+
+#### Niveles de acceso al almacenamiento
+
+### Bases de datos.
+
+#### Azure Cosmos Database
+
+#### Azure SQL Database
+
+#### Azure Database for MySQL
+
+#### Azure Database for PostgreSQL
+
+#### Azure SQL Managed Instance
+
+#### Azure MarketPlace
