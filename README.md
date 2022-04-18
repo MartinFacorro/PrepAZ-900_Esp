@@ -13,7 +13,24 @@ El objetivo es dar un aporte para vuestros caminos.
 
 Como primer item a compartir. Como cada documentacion que uno requiera recorrer, el mejor lugar donde encontrar informacion es en el site oficial.
 Por lo que para iniciar el primer lugar para visitar es el siguiente: <a href="https://docs.microsoft.com/es-mx/learn/azure/"> Azure en Microsoft Learn | Microsoft Docs</a>
-# Módulo 1 Conceptos de la nube
+
+A saber, el examen de AZ-900 consta de los siguientes temas.
+Este examen incluye seis áreas de dominios de conocimiento:
+
+|                                **Área de dominio AZ-900**                | **Peso**              |
+|--------------------------------------------------------------------------|-----------------------|
+|                  Descripción de los conceptos de la nube                 | 20-25 %               |
+|              Descripción de los servicios básicos de Azure               | 15-20 %               |
+|Descripción de las principales soluciones y herramientas de administración de Azure | 10-15 %     |
+| Descripción de las características de seguridad general y de seguridad de red | 10-15 %          |
+|Descripción de las características de identidad, gobernanza, privacidad y cumplimiento | 20-25 %  |
+|Descripción de los Acuerdos de Nivel de Servicio y la administración de costos de Azure | 10-15 % |
+
+
+
+<hr />
+
+# <img src="img\intro-to-azure-fundamentals.svg" alt="" style="height: 40px; width:50px;"/> Módulo 1 Conceptos de la nube
 
 **Computo en la nube**: prestación de servicios a través de internet, permite innovación mas rapida, recursos flexibles y costos regulables.
 
@@ -37,37 +54,35 @@ Por lo que para iniciar el primer lugar para visitar es el siguiente: <a href="h
 - Permite la ejecucion de aplicaciones de manera mas adecuada.
 - Se adecua, con legislaciones o regulaciones de informacion sensible, para que se mantenga en ubicaciones on-premise.
 
-# Beneficios de la nube
+## Beneficios de la nube
 
-Capacidad que tienen las infraestructuras para mantenerse funcionando la mayor cantidad de tiempo posible, sin perjudicar la operación.
+- **Alta disponibilidad**: Capacidad que tienen las infraestructuras para mantenerse funcionando la mayor cantidad de tiempo posible, sin perjudicar la operación.
 
-Capacidad de responder a una falla, sin generar la caída completa de los sistemas.
+- **Tolerancia a fallos**: Capacidad de responder a una falla, sin generar la caída completa de los sistemas.
 
-Capacidad de agregar instancias o crecer verticalmente, por ejemplo en la cantidad de maquinas virtuales para operar un sistema. (se realiza de forma manual o automática)
+- **Escalabilidad**: Capacidad de agregar instancias o crecer verticalmente, por ejemplo en la cantidad de maquinas virtuales para operar un sistema. (se realiza de forma manual o automática)
 
-Capacidad de crecer horizontalmente, en este caso se incrementan los recursos de computo a un servicio o sistema. (se realiza de forma manual o automática)
+- **Elasticidad**: Capacidad de crecer horizontalmente, en este caso se incrementan los recursos de computo a un servicio o sistema. (se realiza de forma manual o automática)
 
-Esta relacionado con las capacidades de latencia por el lado del cliente. Relacionado a regiones, paises. 
+- **Alcance global**: Esta relacionado con las capacidades de latencia por el lado del cliente. Relacionado a regiones, paises. 
 
-Permite levantar servicios en la ubicación geográfica mas cercada, en donde los usuarios los estan consumiendo.
+- **Capacidades de latencia del cliente**: Permite levantar servicios en la ubicación geográfica mas cercada, en donde los usuarios los estan consumiendo.
 
-Capacidad de generar o eliminar un recurso, un sistema de manera rapida y eficiente en el momento que lo creamos conveniente.
+- **Agilidad**: Capacidad de generar o eliminar un recurso, un sistema de manera rapida y eficiente en el momento que lo creamos conveniente.
 
-Calculadora de costos.
+- **Consideraciones de costos predictivo**: Calculadora de costos, costos de capital.
 
-Costos de Capital
-
-# Costos de capital (Capex) (modelo on-premise)
+## Costos de capital (Capex) (modelo on-premise)
 
 - Gasto inicial de dinero en infraestructura física.
 - Costos derivados de CapEx tienen un valor que se reduce con el tiempo.
 
-# Gastos Operativos (OpEx)
+## Gastos Operativos (OpEx)
 
 - El gasto y la facturación en servicios o productos según sea necesario.
 - Los gastos se deducen el mismo año.
 
-# Modelo basado en el consumo
+## Modelo basado en el consumo
 
 Los usuarios finales solo pagan por los recursos que utilizan.
 
@@ -75,13 +90,18 @@ Los usuarios finales solo pagan por los recursos que utilizan.
 - Se proporcionan precios para recursos y servicios individuales.
 - La facturación se basa en uso real.
 
-**Infraestructura como Servicio: (IaaS):** Estructura mas básica, el proveedor se ocupa de la planta física, de la seguridad, seguridad de red, proveen los servidores y almacenamiento.
+## Servicios en la nube
 
-**Plataforma como servicio  (SaaS):** Proporciona un entorno para desarrollar, probar e implementar aplicaciones, sin centrarse en la administración de la infraestructura subyacente.
+### **Infraestructura como Servicio: (IaaS)** 
+Estructura mas básica, el proveedor se ocupa de la planta física, de la seguridad, seguridad de red, proveen los servidores y almacenamiento.
+
+### **Plataforma como servicio  (SaaS):** 
+Proporciona un entorno para desarrollar, probar e implementar aplicaciones, sin centrarse en la administración de la infraestructura subyacente.
 
 Se utiliza para poder desarrollar, implementar software, si preocupaciones sobre la infrastructura.
 
-**Software como Servicio (Saas):** Los usuarios usan aplicaciones basadas en la nube y se conectan a ellas a través de Internet. Algunos ejemplos: Microsoft 365, correo electrónico, calendario. Aplicaciones 100% en la nube.
+### **Software como Servicio (Saas):** 
+Los usuarios usan aplicaciones basadas en la nube y se conectan a ellas a través de Internet. Algunos ejemplos: Microsoft 365, correo electrónico, calendario. Aplicaciones 100% en la nube.
 
 ### Modelo de Responsabilidad compartida.
 
