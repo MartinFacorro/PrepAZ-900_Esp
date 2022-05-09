@@ -1,29 +1,30 @@
 # Presentación
 
 - 👋 Hola, Soy @MartinFacorro
-- 👀 Me interesa muchisimas cosas, dentro de la tecnologia, soy un programador apasionado. Me gusta mucho trabajar en equipo, observar como se trabaja y entender el valor del capital humano. En otros ordenes de la vida, me gusta mucho la lectura, no puedo vivir sin estar con un libro en la mano. Su tuviese que recomendar un libro, ese seria "El Mundo de Sofia" una novela de Jostein Gaarder.
-- 🌱 Actualmente estoy aprendiendo sobre la nube por supuesto, y continuamente aprendiendo sobre temas de desarrollo.
+- 👀 Me interesa muchísimás cosas, dentro de la tecnología, soy un programador apasionado. Me gusta mucho trabajar en equipo, observar cómo se trabaja y entender el valor del capital humano. En otros ordenes de la vida, me gusta mucho la lectura, no puedo vivir sin estar con un libro en la mano. Su tuviese que recomendar un libro, ese seria "El Mundo de Sofia" una novela de Jostein Gaarder.
+- 🌱 Actualmente estoy aprendiendo sobre la nube por supuesto, y continuamente aprendiendo sobre temás de desarrollo.
 - 💞️ Estoy buscando colaborar en la comunidad de Desarrolladores.
-- 📫 Cómo llegar a mí podes encontrarme en:
-  - Twitter buscandome como <a href="https://twitter.com/FacorroMartin"> @FacorroMartin </a> 
-  - LinkedIn como <a href="https://www.linkedin.com/in/martin-facorro/"> Martin Facorro </a>
+- 📫 Cómo llegar a mí, podras encontrarme en:
+  - Twitter <a href="https://twitter.com/FacorroMartin"> @FacorroMartin </a> 
+  - LinkedIn <a href="https://www.linkedin.com/in/martin-facorro/"> Martin Facorro </a>
   - Facebook <a href="https://www.facebook.com/profile.php?id=100080665428602"> Martin Facorro </a>
   - Instagram <a href="https://www.instagram.com/facorro.martin/"> Martin Facorro </a>
+  - Github <a href="https://github.com/MartinFacorro"> Martin Facorro </a>
 
 
-# Preparacion Azure AZ-900 Español
+# Preparación Azure AZ-900 español
 
-En este camino del aprendizaje, mientras lo recorro, quiero compartir aquellos recursos que me sirven al momento de preparme.
+En este camino del aprendizaje, mientras lo recorro, quiero compartir aquellos recursos que me sirven al momento de prepararme.
 
 El objetivo es dar un aporte para vuestros caminos.
 
-Como primer item a compartir. Como cada documentacion que uno requiera recorrer, el mejor lugar donde encontrar informacion es en el site oficial.
+Como primer ítem a compartir. Como cada documentación que uno requiera recorrer, el mejor lugar donde encontrar información es en el site oficial.
 Por lo que para iniciar el primer lugar para visitar es el siguiente: <a href="https://docs.microsoft.com/es-mx/learn/azure/"> Azure en Microsoft Learn | Microsoft Docs</a>
 
-A saber, el examen de AZ-900 consta de los siguientes temas.
+A saber, el examen de AZ-900 consta de los siguientes temás.
 Este examen incluye seis áreas de dominios de conocimiento:
 
-|                                **Área de dominio AZ-900**                | **Peso**              |
+|                                **Área de domínio AZ-900**                | **Peso**              |
 |--------------------------------------------------------------------------|-----------------------|
 |                  Descripción de los conceptos de la nube                 | 20-25 %               |
 |              Descripción de los servicios básicos de Azure               | 15-20 %               |
@@ -38,7 +39,7 @@ Este examen incluye seis áreas de dominios de conocimiento:
 
 # <img src="img\intro-to-azure-fundamentals.svg" alt="" style="height: 40px; width:50px;"/> Módulo 1 Conceptos de la nube
 
-**Computo en la nube**: prestación de servicios de computo a través de internet, permite el acceso bajo demanda a un grupo de recursos. Permite innovación mas rapida, recursos flexibles y costos regulables.
+**cómputo en la nube**: prestación de servicios de cómputo a través de internet, permite el acceso bajo demanda a un grupo de recursos. Permite innovación más rápida, recursos flexibles y costos regulables.
 
 ## Modelos en la nube
 
@@ -51,30 +52,30 @@ Este examen incluye seis áreas de dominios de conocimiento:
 ### Nube Publica
 
 - Propiedad del Cloud Services o proveedor de hosting
-- Proporciona recursos y servicios a multiples organización y usuarios.
+- Proporciona recursos y servicios a múltiples organización y usuarios.
 - Se accede a través de una red segura(por lo general internet).
 
 ### Nube hibrida
 
 - Combina la nube publica con la privada.
-- Permite la ejecucion de aplicaciones de manera mas adecuada.
-- Se adecua, con legislaciones o regulaciones de informacion sensible, para que se mantenga en ubicaciones on-premise.
+- Permite la ejecucion de aplicaciones de manera más adecuada.
+- Se adecua, con legislaciones o regulaciones de información sensible, para que se mantenga en ubicaciones on-premise.
 
 ## Beneficios de la nube
 
 - **Alta disponibilidad**: Capacidad que tienen las infraestructuras para mantenerse funcionando la mayor cantidad de tiempo posible, sin perjudicar la operación.
 
-- **Tolerancia a fallos**: Capacidad de responder a una falla, sin generar la caída completa de los sistemas.
+- **Tolerancia a fallos**: Capacidad de responder a una falla, sin generar la caída completa de los sistemás.
 
-- **Escalabilidad**: Capacidad de agregar instancias o crecer verticalmente, por ejemplo en la cantidad de maquinas virtuales para operar un sistema. (se realiza de forma manual o automática)
+- **Escalabilidad**: Capacidad de agregar instancias o crecer verticalmente, por ejemplo, en la cantidad de máquinas virtuales para operar un sistema. (se realiza de forma manual o automática)
 
-- **Elasticidad**: Capacidad de crecer horizontalmente, en este caso se incrementan los recursos de computo a un servicio o sistema. (se realiza de forma manual o automática)
+- **Elasticidad**: Capacidad de crecer horizontalmente, en este caso se incrementan los recursos de cómputo a un servicio o sistema. (se realiza de forma manual o automática)
 
-- **Alcance global**: Esta relacionado con las capacidades de latencia por el lado del cliente. Relacionado a regiones, paises. 
+- **Alcance global**: Esta relacionado con las capacidades de latencia por el lado del cliente. Relacionado a regiones, países. 
 
-- **Capacidades de latencia del cliente**: Permite levantar servicios en la ubicación geográfica mas cercada, en donde los usuarios los estan consumiendo.
+- **Capacidades de latencia del cliente**: Permite levantar servicios en la ubicación geográfica más cercada, en donde los usuarios los estan consumiendo.
 
-- **Agilidad**: Capacidad de generar o eliminar un recurso, un sistema de manera rapida y eficiente en el momento que lo creamos conveniente.
+- **Agilidad**: Capacidad de generar o eliminar un recurso, un sistema de manera rápida y eficiente en el momento que lo creamos conveniente.
 
 - **Consideraciones de costos predictivo**: Calculadora de costos, costos de capital.
 
@@ -103,9 +104,10 @@ Los usuarios finales solo pagan por los recursos que utilizan.
 <img src="img\IaaS.png" alt="" style="height: 240px; width:550px;"/>
 
 
-Estructura mas básica, el proveedor se ocupa de la planta física, de la seguridad, seguridad de red, proveen los servidores y almacenamiento.
+Estructura más básica, el proveedor se ocupa de la planta física, de la seguridad, seguridad de red, proveen los servidores y almacenamiento.
 
-### **Plataforma como servicio  (SaaS):**
+### **Plataforma como servicio  (PaaS):**
+
 <img src="img\PaaS.png" alt="" style="height: 240px; width:550px;"/>
 
 Proporciona un entorno para desarrollar, probar e implementar aplicaciones, sin centrarse en la administración de la infraestructura subyacente.
@@ -113,6 +115,7 @@ Proporciona un entorno para desarrollar, probar e implementar aplicaciones, sin 
 Se utiliza para poder desarrollar, implementar software, si preocupaciones sobre la infrastructura.
 
 ### **Software como Servicio (Saas):**
+
 <img src="img\SaaS.png" alt="" style="height: 240px; width:550px;"/>
 
 Los usuarios usan aplicaciones basadas en la nube y se conectan a ellas a través de Internet. Algunos ejemplos: Microsoft 365, correo electrónico, calendario. Aplicaciones 100% en la nube.
@@ -123,7 +126,7 @@ La responsabilidad de acceso y de datos siempre es responsabilidad del cliente.
 
 <img src="img\shared-responsibility.svg" alt="" style="height: 340px; width:550px;"/>
 
-### Comparacion de servicios en la nube
+### Comparación de servicios en la nube
 
 <img src="img/IaaS+PaaS+SaaS.png" alt="" style="height: 210px; width:550px;"/>
 
@@ -132,9 +135,9 @@ La responsabilidad de acceso y de datos siempre es responsabilidad del cliente.
 <img src="img/ModeloDeResponsabilidadCompartida.png" alt="" style="height: 260px; width:550px;"/>
 
 
-### ServerLess o computo sin servidor
+### ServerLess o cómputo sin servidor
 
-Con el modelo de computo sin servidor, el proveedor de servicios en la nube otorga, escala y administra de manera automatica, la infraestructura para ejecutar el codigo.
+Con el modelo de cómputo sin servidor, el proveedor de servicios en la nube otorga, escala y administra de manera automática, la infraestructura para ejecutar el código.
 
 
 **Azure Functions: (Se necesita un desarrollador)** 
@@ -146,15 +149,15 @@ Funciones que se ejecutan como servicios. Ejecución en tiempo real, donde se cr
 Ventajas:
 
 - En lugar de escribir una aplicación completa, el desarrollador crea una función, la cual contiene código y metadatos sobre sus desencadenadores y enlaces. La plataforma programa automáticamente la función para que se ejecute y escala el número de instancias de proceso según la tasa de eventos de entrada.
-- Permite codigo mas productivo.
+- Permite código más productivo.
 - Leguajes de desarrollo como C#, F#, Node.js, Java o PHP.
-- Pagar solo por el tiempo en que Azure Functcions esta en ejecucion.
+- Pagar solo por el tiempo en que Azure Functions esta en ejecución.
 
 **Azure Logic Apps: (No requiere desarrollador)** 
 
 <img src="img/Azure-Logic-Apps-logo.png" style="height:48px; widht:48px;" />
 
-Las aplicaciones lógicas ejecutan flujos de trabajo diseñados para automatizar escenarios empresariales y compilados a partir de bloques lógicos predefinidos. Todos los flujos de trabajo de aplicación lógica de Azure comienza con un desencadenador, que se activa cuando se produce un evento específico o cuando hay nuevos datos disponibles que cumplen determinados criterios. Con el lanzamiento de un desencadenador, el motor de Logic Apps crea una instancia de aplicación lógica que ejecuta las acciones del flujo de trabajo.
+Las aplicaciones lógicas ejecutan flujos de trabajo diseñados para automatizar escenarios empresariales y compilados a partir de bloques lógicos predefinidos. Todos los flujos de trabajo de aplicación lógica de Azure comienzan con un desencadenador, que se activa cuando se produce un evento específico o cuando hay nuevos datos disponibles que cumplen determinados criterios. Con el lanzamiento de un desencadenador, el motor de Logic Apps crea una instancia de aplicación lógica que ejecuta las acciones del flujo de trabajo.
 
 Estas acciones también pueden incluir conversiones de datos y controles de flujo, como instrucciones condicionales, instrucciones "switch", bucles y bifurcaciones.
 
@@ -187,7 +190,7 @@ Puede mezclar y combinar servicios cuando crea una orquestación, llamando a las
 
 ### Grupos de Administracion.
 
-### Computo (Azure Compute Services).
+### cómputo (Azure Compute Services).
 
 #### Maquinas virtuales.
 
