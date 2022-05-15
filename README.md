@@ -178,37 +178,139 @@ Puede mezclar y combinar servicios cuando crea una orquestación, llamando a las
 
 ## Componentes de Arquitectura
 
-### Regiones.
+### Regiones
 
-### Zonas de disponibilidad.
+Es un conjunto de centros de datos, cada region tiene mas de un data center. Esto permite flexibilidad para los usuarios, ya que reduce la latencia para los clientes. Pudiendo elegir las zonas de mayor proximidad. Las regiones y zonas de disponibilidad de Azure están diseñadas para ayudarle a lograr resistencia y confiabilidad en las cargas de trabajo críticas para la empresa.
 
-### Recursos principales.
+Zonas de disponibilidad
+Las zonas de disponibilidad de Azure son ubicaciones separadas físicamente dentro de cada región de Azure y toleran los errores locales. Estos errores pueden abarcar desde errores de software y hardware hasta eventos como terremotos, inundaciones e incendios. La tolerancia a los errores se logra gracias a la redundancia y el aislamiento lógico de los servicios de Azure. Para garantizar la resistencia, se configuran un mínimo de tres zonas de disponibilidad independientes en todas las regiones habilitadas.
+Estas zonas de disponibilidad de Azure se conectan mediante una red de alto rendimiento que cuenta con una latencia de ida y vuelta inferior a 2 milisegundos. Asimismo, le ayudan a sincronizar los datos y a mantenerlos accesibles cuando las cosas van mal. Cada zona consta de uno o varios centros de datos equipados con una infraestructura de alimentación, refrigeración y redes independientes. Las zonas de disponibilidad están diseñadas de manera que, si se ve afectada una zona, los servicios regionales, la capacidad y la alta disponibilidad serán compatibles con las dos zonas restantes.
+
+<img src="img/availability-zones.png" style="height:48px; widht:48px;" />
+Cada centro de datos se asigna a una zona física. Las zonas físicas se asignan a zonas lógicas de la suscripción de Azure. A las suscripciones de Azure se les asigna automáticamente esta asignación en el momento de crear una suscripción.
+
+**Regiones Pareadas** a traves La norma ISO22000 habla de la continuidad de negocios y recuperacion de desastres.
+para cada region, existe una region par, a menos de 300 millas de distancia de la region original. Esto existe, para que haya replicación pares. Así ante un eventual caída, se recupere la información de la region par.
+
+<img src="img/ZonasPareadas.png" style="height:48px; widht:48px;" />
+
+### Zonas de disponibilidad
+
+<img src="img/ZonasDisponibles.png" style="height:48px; widht:48px;" />
+
+### Recursos principales
+
+Los recursos de Azure son los componentes como almacenamiento, maquinas virtuales,  y redes que estan disponibles para crear soluciones en la nube.
+
+1. Maquinas Virtuales.
+2. Cuentas de almacenamiento.
+3. Redes Virtuales.
+4. App Services.
+5. SQL Database.
+6. Funciones.
 
 ### Azure Resources Manager
 
+<img src="img/ARM.png" style="height:48px; widht:48px;" />
+
 ### Suscripciones
 
-### Grupos de Administracion.
+<img src="img/susc.png" style="height:48px; widht:48px;" />
 
-### cómputo (Azure Compute Services).
+Para crear y usar los servicios de Azure, necesita una suscripción de Azure. Cuando trabaje con aplicaciones y necesidades empresariales propias, tendrá que crear una cuenta de Azure y se creará una suscripción de forma automática. Después de crear una cuenta de Azure, puede crear suscripciones adicionales.
 
-#### Maquinas virtuales.
+### Grupos de Administracion
 
-#### Servicio de Aplicaciones (Application services).
+Los **grupos de recursos** son contenedores logicos, para administrar recursos. Los grupos de recursos permiten no tener que estar eliminando cada recuros.
 
-#### Contenedores (Containers Instances).
+Cada recurso puede pertenecer solo a un grupo de recursos. Los recursos pueden estar en distintas regiones dentro de un mismo grupo de recursos.
+<img src="img/grupoAdmin.png" style="height:48px; widht:48px;" />
 
-#### Azure Kubernetes Services
+Se puede tener hasta 10mil niveles de administración, y 6 niveles.
+
+### cómputo (Azure Compute Services)
+
+Es el servicio mas utilizado. Es un servicio de computo bajo demanda que proporciona recursos de computo como discos, procesadores, memoria, redes y sistemas operativos.
+
+#### Maquinas virtuales
+
+Las maquinas virtuales de Azure, son emulaciones basadas en software de equipos fisicos:
+
+- Incluye un procesador virtual, memoria, almacenamiento y redes.
+- Oferta de la IaaS que proporciona un control y una personalizacion total.
+
+Al utilizar un cliente de escritorio remoto, puede usar y controlar la máquina virtual como si se estuviera sentado delante de ella.
+
+#### Servicio de Aplicaciones (Application services)
+
+Azure App Services es una plataforma totalmente administrada para crear, implementar y escalar aplicaciones web, y APIs rapidamente:
+
+- Compatible con .NET, .NET Core, Node.js, Java, Python o PHP.
+- Oferta de PaaS con requisitos de cumplimineto, seguridad y rendimiento de nivel empresarial.
+- Puede satisfacer los exigentes requisitos de rendimiento, escalabilidad, seguridad y cumplimiento mientras usa una plataforma totalmente administrada para realizar el mantenimiento de la infraestructura. App Service es una oferta de plataforma como servicio (PaaS).
+
+**Tipos de servicios de aplicaciones**
+
+Con App Service, puede hospedar la mayoría de los estilos de servicio de aplicación más comunes, como los siguientes:
+
+- Aplicaciones web: compatibilidad completa para hospedar aplicaciones web mediante ASP.NET, ASP.NET Core, Java, Ruby, Node.js, PHP o Python. Puede elegir Windows o Linux como sistema operativo del host.
+- Aplicaciones de API: puede compilar API web basadas en REST mediante el lenguaje y el marco que prefiera. Se obtiene compatibilidad completa con Swagger y la posibilidad de empaquetar y publicar la API en Azure Marketplace. Las aplicaciones producidas se pueden consumir desde cualquier cliente basado en HTTP o HTTPS.
+- Trabajos web: Se puede usar la característica WebJobs para ejecutar un programa (.exe, Java, PHP, Python o Node.js) o un script (.cmd, .bat, PowerShell o Bash) en el mismo contexto que una aplicación web, aplicación de API o aplicación móvil. Los puede programar o ejecutar un desencadenador. Los trabajos web suelen usarse para ejecutar tareas en segundo plano como parte de la lógica de aplicación.
+- Aplicaciones móviles: Use la característica Mobile Apps de App Service a fin de compilar rápidamente un back-end para aplicaciones iOS y Android. Con unos pocos clics en Azure Portal, puede realizar lo siguiente:
+
+- Almacenar los datos de aplicaciones móviles en una base de datos SQL basada en la nube.
+- Autenticar a clientes con proveedores sociales comunes, como MSA, Google, Twitter y Facebook.
+- Enviar notificaciones de inserción.
+- Ejecutar lógica de back-end personalizada en C# o Node.js.
+
+En el lado de la aplicación móvil, hay compatibilidad con el SDK para aplicaciones nativas de iOS y Android, Xamarin y React.
+
+App Service controla la mayoría de las decisiones sobre la infraestructura que se tratan en el hospedaje de aplicaciones accesibles desde la web:
+
+- La implementación y administración se integran en la plataforma.
+- Los puntos de conexión se pueden proteger.
+- Los sitios se pueden escalar rápidamente para controlar cargas de tráfico elevado.
+- El equilibrio de carga integrado y el administrador de tráfico proporcionan alta disponibilidad.
+
+Todos estos estilos de aplicación se hospedan en la misma infraestructura y comparten estas ventajas. Esto convierte a App Service en la elección ideal para hospedar aplicaciones orientadas a la web.
+
+#### Contenedores (Azure Container Services)
+
+Los contenedores de Azure son un entorno virtualizado ligero que no requiere administracion del sistema operativo y puede responder a los cambios bajo demanda:
+
+- **Azure Container Instances**: una oferta de PaaS que ejecuta un contenedor en Azure son la necesidad de administrar una maquina virtual o servicios adicionales.
+- **Azure Kubernetes Services**: un servicio completo con arquitecturas distribuidas y grandes volumenes de contenedores.
+
+Los contenedores son una excelente opción si quiere ejecutar varias instancias de una aplicación en un solo equipo host.
 
 #### Escritorio Virtual de Windows
 
-### Redes.
+Windows Virtual Desktop es la virtualización de aplicaciones y escritorios que se ejecuta en la nube:
+
+- Cree un entorno de virtualizacion de escritorio completo sin tener que ejecutar servidores de puerta de enlace adicionales.
+- Publique grupos de hosts ilimitados para adaptarse a diversas cargas de trabajo.
+- Reduzca los costos con recursos agrupados para multiples sesiones.
+
+Azure Virtual Desktop proporciona administración centralizada de la seguridad de los escritorios de los usuarios con Azure Active Directory (Azure AD). Puede habilitar la autenticación multifactor para proteger los inicios de sesión de los usuarios. También puede proteger el acceso a los datos mediante la asignación a los usuarios de controles de acceso basados en roles (RBAC) detallados.
+
+Los datos y las aplicaciones se separan del hardware local y se ejecutan en un servidor remoto. Se reduce el riesgo de dejar los datos confidenciales en un dispositivo personal.
+
+Las sesiones de usuario están aisladas en entornos de una o varias sesiones.
+
+### Redes
+
+Incluye una gama de opciones para conectar el mundo exterior a servicios y características de los centros de datos globales de Azure.
 
 #### Azure Virtual Network (VNet)
+Permite que los recursos de Azure se comuniquen entre si, con internet y con redes locales.
 
 #### Virtual Private Network Gateway (VPN)
 
+Se usa para enviar tráfico cifrado entre una red virtual de Azure y una ubicacion local a través de la internet pública.
+
 #### Azure Express Route
+
+Extiende las redes locacles hacia Azure a traves de una conexion privada que facilita un proveedore de conexion.
 
 ### Almacenamiento (Azure Storage Services).
 
